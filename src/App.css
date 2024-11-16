@@ -1,38 +1,106 @@
-.App {
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a; /* Темный фон для тела */
+  color: #f4f4f4; /* Светлый текст */
+}
+
+/* Контейнер */
+.container {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+/* Заголовок */
+.header {
+  margin-bottom: 20px;
+  background-color: #333; /* Темный фон для заголовка */
+  color: #f4f4f4; /* Светлый текст */
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Навигация */
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #444; /* Темный фон кнопок */
+  color: #f4f4f4; /* Светлый текст */
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-button:hover {
+  background-color: #007bff; /* Синий при наведении */
+  color: #fff;
+}
+
+/* Кнопки игры */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #28a745; /* Зеленый для кнопок игры */
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1e7e34; /* Более темный зеленый при наведении */
+}
+
+/* Кнопка подключения кошелька */
+.connect-button {
+  margin-top: 10px;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #17a2b8; /* Бирюзовый для кнопки */
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+  background-color: #138496; /* Более темный бирюзовый */
+}
+
+
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #28a745; 
+  font-weight: bold;
+}
+
+.loading {
+  color: #007bff; 
+  margin-top: 20px;
+  font-size: 18px;
 }

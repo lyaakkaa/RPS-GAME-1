@@ -1,0 +1,55 @@
+
+.rules-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #222; 
+  color: #f4f4f4; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  line-height: 1.6;
+}
+
+.rules-image {
+  text-align: center;
+}
+
+
+.rules-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff; 
+}
+
+
+.rules-content {
+  font-size: 1.1rem;
+}
+
+
+.rules-content h3 {
+  font-size: 1.4rem;
+  margin: 15px 0 10px;
+  color: #28a745; 
+}
+
+
+.rules-content ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.rules-content ul li {
+  margin-bottom: 10px;
+}
+
+.rules-content ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+.rules-content ol li {
+  margin-bottom: 10px;
+}
